@@ -1,0 +1,7 @@
+{
+  "name": "slack-pgyer-integration",
+  "description": "Pgyer build notifications for Slack",
+  "repository": "https://github.com/kytwb/slack-pgyer-integration",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["pgyer", "slack", "devops"]
+}
