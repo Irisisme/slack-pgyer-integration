@@ -1,0 +1,24 @@
+{
+  "name": "slack-pgyer-integration",
+  "version": "1.0.0",
+  "description": "Pgyer build notifications for Slack",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kytwb/slack-pgyer-integration.git"
+  },
+  "keywords": [
+    "pgyer",
+    "slack",
+    "devops"
+  ],
+  "author": "Amine Mouafik <amine@melotic.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kytwb/slack-pgyer-integration/issues"
+  },
+  "homepage": "https://github.com/kytwb/slack-pgyer-integration#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
