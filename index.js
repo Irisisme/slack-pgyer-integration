@@ -10,8 +10,8 @@ var slackBaseUrl = 'https://hooks.slack.com'
 app.use(bodyParser.json())
 
 app.get('*', function (req, res) {
-  var notification = req.body.Message + ` Build <a href="${req.body.Link}">#${req.body.Build_version}</a>. ` +
-        (req.body.Notes) ? `Notes: ${req.body.Notes}` : ``
+  var notification = req.body.message + ` Build <a href="${req.body.link}">#${req.body.build_version}</a>. ` +
+        (req.body.notes) ? `Notes: ${req.body.notes}` : ``
   return request({
     method: 'POST',
     uri: slackBaseUrl + req.path,
