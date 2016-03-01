@@ -1,6 +1,6 @@
 'use strict'
 
-var request = require('request')
+var request = require('request-promise')
 var bodyParser = require('body-parser')
 var express = require('express')
 var app = express()
@@ -21,9 +21,9 @@ app.get('*', function (req, res) {
     },
     json: true
   }).then(function (body) {
-    return res.status(200).send(body)
+    return res.status(200).send()
   }).catch(function (error) {
-    return res.status(500).send(error)
+    return res.status(error.statusCode || 500).send(error)
   })
 })
 
