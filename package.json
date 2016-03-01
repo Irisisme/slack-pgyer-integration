@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kytwb/slack-pgyer-integration#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "request-promise": "^2.0.1"
   }
 }
