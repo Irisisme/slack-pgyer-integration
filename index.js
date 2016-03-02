@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 app.use(function (req, res, next) {
-  var notification = req.body.message + ` Build <a href="${req.body.link}">#${req.body.build_version}</a>. ` +
-        (req.body.notes) ? `Notes: ${req.body.notes}` : ``
+  var notification = `${req.body.title} v${req.body.os_version} Build <${req.body.link}|#${req.body.build_version}> is available. ` +
+        ((req.body.notes) ? `Notes: ${req.body.notes}` : ``)
   return request({
     method: 'POST',
     uri: slackBaseUrl + req.path,
