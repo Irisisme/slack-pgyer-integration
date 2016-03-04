@@ -18,4 +18,4 @@ Alternatively you could deploy the code yourself using the Heroku button above.
 
 ## Result
 
-![Pgyer Slack Bot](http://s12.postimg.org/cq4oezu3f/devops_Melotic_Slack.png)
+![Pgyer Slack Bot](https://raw.githubusercontent.com/melotic/slack-pgyer-integration/master/preview.png)
